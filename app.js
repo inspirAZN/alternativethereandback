@@ -58,7 +58,7 @@ mongoose.connect(uristring, function(err, res){
 // app.get('/', index.view);
 // app.get('/', moments.view);
 // app.get('/palette', palette.randomPalette);
-app.get('/prev', prev.back);
+app.get('/', prev.back);
 
 // Example route
 // app.get('/users', user.list);
