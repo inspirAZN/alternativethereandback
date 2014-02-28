@@ -12,6 +12,7 @@ var mongoose = require('mongoose');
 
 var index = require('./routes/index');
 var moments = require('./routes/moments');
+var prev = requie('./routes/prev');
 //var project = require('./routes/project');
 //var palette = require('./routes/palette');
 // Example route
@@ -57,9 +58,7 @@ mongoose.connect(uristring, function(err, res){
 // app.get('/', index.view);
 // app.get('/', moments.view);
 // app.get('/palette', palette.randomPalette);
-app.get('/prev', function(req,res){
-	res.redirect('back');
-});
+app.get('/prev', prev.back);
 
 // Example route
 // app.get('/users', user.list);
